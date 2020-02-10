@@ -21,9 +21,9 @@ OBJDIR = objs
 CC = gcc
 CFLAGS = -Wall -Werror -Wextra
 
-INC = -I includes -I libft
+INC = -I includes/ -I libft/ -I minilibx/
 
-LIBS = -L libft -lft -lm -lmlx -framework OpenGL -framework AppKit
+LIBS = -Llibft -lft -lm -lmlx -Lminilibx -framework OpenGL -framework AppKit
 
 SRC = $(addprefix $(SRCDIR)/, $(SRC_NAME))
 OBJ = $(addprefix $(OBJDIR)/, $(OBJ_NAME))
